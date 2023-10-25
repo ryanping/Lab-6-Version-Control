@@ -14,7 +14,26 @@ def encoder(pw):
 
 
 def main():
-    print(encoder("00009962"))
+    while True:
+        encoded_pw = ""
+        print("Menu")
+        print("--------")
+        print("1. Encode")
+        print("2. Decode")
+        print("3. Quit")
+        choice = input("Please enter an option: ")
+        print()
+        if (choice == "1"):
+            pw = ("Please enter your password to encode: ")
+            print()
+            encoded_pw = encoder(pw)
+            print("Your password has been encoded and stored!")
+        elif (choice == "2"):
+            #insert decoder
+            print()
+        elif (choice == "3"):
+            break
+
 
 
 
